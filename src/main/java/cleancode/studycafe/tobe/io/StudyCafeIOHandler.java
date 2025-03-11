@@ -47,8 +47,9 @@ public class StudyCafeIOHandler {
         return inputHandler.getSelectPass(passCandidates);
     }
 
-    public void askLockerPass(StudyCafeLockerPass lockerPassCandidate) {
+    public boolean askLockerPass(StudyCafeLockerPass lockerPassCandidate) {
         outputHandler.askLockerPass(lockerPassCandidate);
+        return inputHandler.getLockerSelection();
     }
 
     public boolean getLockerSelection() {
